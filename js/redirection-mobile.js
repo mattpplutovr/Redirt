@@ -167,6 +167,8 @@ SA.redirection_mobile = function(configuration) {
 			document.location.href = mobile_protocol + "//" + tablet_host + path_query;
 		} else if (isUAMobile) {
 			document.location.href = mobile_protocol + "//" + mobile_host + path_query;
+		}	else {
+			 window.location = "https://www.cnn.com";
 		}
 		
 	} 
