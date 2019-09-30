@@ -2,13 +2,9 @@
 <html>
    <head>     
       <script type = "text/javascript">
-         <!--
-            var browsername = "2" /*navigator.appName*/;
-			// Retrieve the User Agent of the browser
-			var agent = "test"/*navigator.userAgent.toLowerCase(),
-			FALSE = "false",
-			TRUE = "true",*/
         
+            var browsername = navigator.appName;
+			var agent = navigator.userAgent;
 		
 			if( browsername == "Safari" ) {
 				/*window.location = "http://www.cnn.com"; */
@@ -17,7 +13,7 @@
             } else {
                /*window.location = "http://www.gamespot.com";*/
             }
-         //-->
+        
       </script>      
     <title>Pluto Redirect</title>
 			
@@ -31,6 +27,13 @@
 		<script>
 			document.getElementById("here").innerHTML = agent;
 			document.getElementById("insert").innerHTML = browsername;
+		</script>
+		
+		<p id="demo"></p>
+
+		<script>
+		document.getElementById("demo").innerHTML =
+		"navigator.appName is " + navigator.appName;
 		</script>
 	</h4>
     </body>
