@@ -8,8 +8,7 @@
 			var agent = navigator.userAgent.toLowerCase(),
 			FALSE = "false",
 			TRUE = "true",
-        	document.getElementById("here").innerHTML = "test";
-			document.getElementById("insert").innerHTML = "test2";
+        
 		
 			if( browsername == "Safari" ) {
 				/*window.location = "http://www.cnn.com"; */
@@ -26,9 +25,13 @@
   <body>
     <h1>Hello, World! test 3</h1>
 	<h4> browsername = 
-		<id="insert">
+		<p id="insert"> </p>
 		agent = 
-		<id="here">
+		<p id="here"> </p>
+		<script>
+			document.getElementById("here").innerHTML = "test";
+			document.getElementById("insert").innerHTML = "test2";
+		</script>
 	</h4>
     </body>
 </html>
