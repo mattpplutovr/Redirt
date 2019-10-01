@@ -2,57 +2,44 @@
 <html>
    <head>     
       <script type = "text/javascript">
-        
-            var browsername = navigator.appName;
-			var agent = navigator.userAgent;
+       
+         	var agent = navigator.userAgent;
 			var result = false;
 			var isDevice = "test";
 			
 			if (result = /Window/g.test(agent)){
 				isDevice = "windows";
+				window.location = "https://store.steampowered.com/app/389980/Pluto/";
 			} else if (result = /iPhone/g.test(agent)){
 				isDevice = "iphone";
+				https://testflight.apple.com/join/fawwOcxi
 			} else if (result = /iPad/g.test(agent)){
 				isDevice = "ipad";
+				https://testflight.apple.com/join/fawwOcxi
 			} else if (result = /Android/g.test(agent)){
 				isDevice = "android";
+				https://mailchi.mp/plutovr/ohno
 			} else  {
 				isDevice = "unsupported";
+				https://mailchi.mp/plutovr/ohno
 			}
-			
-	
-			if( browsername == "Safari" ) {
-				/*window.location = "http://www.cnn.com"; */
-            } else if ( browsername =="Microsoft Internet Explorer") {
-               /*window.location = "http://www.bing.com";*/
-            } else {
-               /*window.location = "http://www.gamespot.com";*/
-            }
-        
+		       
       </script>      
     <title>Pluto Redirect</title>
 			
   </head>
   <body>
-    <h1>Hello, World! test 3</h1>
-	<h4> browsername = 
-		<p id="insert"> </p>
-		agent = 
+    <h1>Hello</h1>
+	<h4> 
 		<p id="here"> </p>
 		<script>
 			document.getElementById("here").innerHTML = agent;
-			document.getElementById("insert").innerHTML = browsername;
-		</script>
-		
-		<p id="demo"></p>
+		</script>		
 		<p id="mobile"></p>
-
 		<script>
-		document.getElementById("demo").innerHTML =
-		"navigator.appName is " + navigator.appName;
-		document.getElementById("mobile").innerHTML =
-		"is device " + isDevice;	
-		</script>
+			document.getElementById("mobile").innerHTML =
+			"is device " + isDevice;	
+		</script>*/
 	</h4>
     </body>
 </html>
