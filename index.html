@@ -14,7 +14,7 @@
 			} else if (result = /iPhone/g.test(agent)){
 				isDevice = "iphone";
 				window.location = "https://testflight.apple.com/join/fawwOcxi";
-			} else if (result = /iPad/g.test(agent)){
+			} else if (result = /iPad/g.test(agent) || (result = /Macintosh/g.test(agent)&& navigator.maxTouchPoints > 1) ){
 				isDevice = "ipad";
 				window.location = "https://testflight.apple.com/join/fawwOcxi";
 			} else if (result = /Android/g.test(agent)){
