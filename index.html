@@ -4,6 +4,7 @@
       <script type = "text/javascript">
        
          	var agent = navigator.userAgent;
+			var touch = navigator.maxTouchPoints;
 			var result = false;
 			var isDevice = "test";
 			
@@ -39,6 +40,11 @@
 		<script>
 			document.getElementById("mobile").innerHTML =
 			"is device " + isDevice;	
+		</script>
+		<p id="tap"></p>
+		<script>
+			document.getElementById("tap").innerHTML =
+			"touch  " + touch;	
 		</script>
 	</h4>
     </body>
